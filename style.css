@@ -21,12 +21,11 @@ html,body{
     
     height: 100%;
 
-
 }
 /* loder */
 #fs{
     /* display: none; */
-    position: absolute;
+  position: fixed;
     width: 100%;
     height: 100%;
     z-index: 9999;
@@ -35,7 +34,7 @@ html,body{
 }
 
 #elem{
-    /* display: none; */
+   /* display: none; */
     width: 100%;
     height: 0px;
     position: absolute;
@@ -49,14 +48,6 @@ html,body{
     font-weight: 100;
     color: #12cf93;
 }
-/* #white{
-    width: 100%;
-    height: 0;
-    position: absolute;
-    bottom: 0;
-    background-color: #dadada;
-} */
-
 
 
 /* text animation */
@@ -107,8 +98,8 @@ html,body{
 /* part2--------------------- */
 #home{
     width: 100%;
-    height: 200vh;
-    background-color: #f0f0f0;
+    height: 150vh;
+    /* background-color: #f0f0f0; */
     
 }
 #home #nav{
@@ -158,19 +149,19 @@ html,body{
 }
 /* //desiner part */
 .row{
-    margin-top: 5vw;
+    margin-top: 2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     color: #333;
     padding: 0 7vw;
-    line-height: 1;
+    line-height: 1.2;
     padding-right: 12vw;
 
 }
 .row h1{
-    font-size: 13vw;
+    font-size: 12vw;
     font-weight: 500;
 }
 .row .text{
@@ -190,10 +181,10 @@ html,body{
 
 /* visual svg  */
 .row svg{
-     height: 100px;
+     height:9vw;
      /* ? */
 /* padding: 0 4vw; */
-margin: 0 4vw;
+margin: 0 2.5vw;
 
 
 
@@ -202,3 +193,144 @@ margin: 0 4vw;
     stroke: #12cf93;
    }
 
+   /* crads section */
+   #imaginary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22vw;
+    width: 100%;
+    padding: 5vw 7vw;
+
+   }
+   #imaginary #img-left{
+    width:30%;
+    height: auto;
+
+   }
+
+  #img-left h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8vw;
+    letter-spacing:1px;
+    color: black;
+}
+#img-left h1 span{
+    color: #12cf93;
+    font-style: italic;
+    font-family:"mazius Review 20.09";
+    font-weight: 100;
+}
+.img-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    width: 60%;
+    background-color: yellow;
+}
+.img-right .imgcontnr{
+    position: absolute;
+    z-index: 999;
+    width: 27vw;
+    height:40vw;
+    border-radius: 1vw;
+    /* grey img */
+    filter: grayscale();
+    background-color: red;
+    transition: all cubic-bezier(0.19,1,0.22,1) 1s;
+}
+.img-right .imgcontnr:hover{
+    filter: grayscale(0);
+}
+.img-right .imgcontnr:nth-child(1){
+    transform: translate(-40%,-8%) rotate(-20deg);
+    background-image: url(images/card1.a0552dbc.png);
+    background-color: yellow;
+    background-size: cover;
+    background-position: center;
+}
+.img-right .imgcontnr:nth-child(2){
+    transform: translate(-15%,0%) rotate(-15deg);
+    background-image: url(images/card3.b705d81b.png);
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+.img-right .imgcontnr:nth-child(3){
+    transform: translate(20%,10%) rotate(-5deg);
+    background-image: url(images/card1.a0552dbc.png);
+    background-color: green;
+    background-size: cover;
+    background-position: center;
+}
+
+#work{
+    position: relative;
+    width:100% ;
+    min-height: 70vh;
+    margin-top: 8vw;
+    background-color: #f2f2f2;
+}
+#work::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-image: url(https://abhishekjha.me/rip.f6d7c4dd.svg);
+    top:-75px;
+    transform:rotate(-180deg);
+    background-size: cover;
+
+}
+
+.littelintro{
+    display: flex;
+    gap: 4rem;
+    height:20rem;
+    border-bottom: 0.1px solid gray;
+   padding:5rem ;
+    margin: 10%;
+
+}
+.svgdivleft img{
+   align-self: start;
+   height: 4rem;
+ transform: rotate(35deg);
+   
+
+}
+.svgright{
+    align-self: flex-end;
+   
+   
+
+}
+.svgright span{
+    font-size:13px;
+    font-style: italic;
+    color: grey;
+    text-transform: uppercase;   
+}
+.svgright p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+}
+
+
+#work .workrow{
+    padding: 0 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.workrow h1{
+    font-size: 8vw;
+    font-weight: 600;
+
+} 
