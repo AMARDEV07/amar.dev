@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -77,9 +78,9 @@
           <div id="work">
              <!-- telling div  -->
             <div class="littelintro">
-                <div class="svgdivleft">
-                    <img src="images/—Pngtree—vector forward icon_4184777.png" alt="">
-                </div>
+                <svg class="o-ui-arrow" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M3.10162 3.10156L62.9999 62.9999" stroke-linecap="round" stroke-linejoin="round"></path>
+                     <path d="M63 1.00001L63 63L0.999989 63" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
                 <div class="svgright">
                     <span>Things I can Help you
                        <br> with.</span>
@@ -89,7 +90,24 @@
            <!-- works feats div ---------- -->
            <div class="workrow">
                 <h1>Feats wo<span class="maz">r</span>ks</h1>
-                <img src="" alt="">
+                <svg class="o-ui-arrow" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M3.10162 3.10156L62.9999 62.9999" stroke-linecap="round" stroke-linejoin="round"></path> 
+                    <path d="M63 1.00001L63 63L0.999989 63" stroke-linecap="round" stroke-linejoin="round"></path> 
+                </svg>
+            </div>
+
+
+            <!-- parallex div?  using locomotive ------------------->
+
+            <div id="images">
+                <!-- container1 -->
+                <div class=" cnt cnt1">
+                    <img data-scroll data-scroll-speed="-1.5" src="images/aeizei.7edf201c.png" alt="">
+               </div>
+               <!-- container2 -->
+                <div class="cnt cnt2">
+                    <img data-scroll data-scroll-speed="-1.5"  src="images/display.835f9d62.png" alt="">
+                </div>
             </div>
            
           </div>
@@ -98,6 +116,7 @@
      </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="scprit.js"></script>
 </body>
 </html>

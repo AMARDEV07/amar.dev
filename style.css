@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:gilroy;
+     font-family: serif;
 }
 html,body{
     height: 100%;
@@ -43,8 +43,8 @@ html,body{
     background-color: #12cf93;
 }
 .maz{
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* font-style: italic; */
     font-weight: 100;
     color: #12cf93;
 }
@@ -98,7 +98,7 @@ html,body{
 /* part2--------------------- */
 #home{
     width: 100%;
-    height: 150vh;
+    /* height: 150vh; */
     /* background-color: #f0f0f0; */
     
 }
@@ -295,13 +295,7 @@ margin: 0 2.5vw;
     margin: 10%;
 
 }
-.svgdivleft img{
-   align-self: start;
-   height: 4rem;
- transform: rotate(35deg);
-   
 
-}
 .svgright{
     align-self: flex-end;
    
@@ -333,4 +327,44 @@ margin: 0 2.5vw;
     font-size: 8vw;
     font-weight: 600;
 
-} 
+}   
+
+.o-ui-arrow path{ 
+    stroke: rgba(65,65,65.3);
+  
+
+}
+.o-ui-arrow:nth-child(1){
+    transform: rotate(0deg);
+}
+.o-ui-arrow{
+    transform: rotate(90deg);
+}
+
+
+/* parallx cards */
+#images{
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    margin-top:6vw;
+    width: 100%;
+    position: relative;
+    padding: 0 5vw;
+}
+.cnt{
+
+    overflow: hidden;
+    border-radius:50px;
+
+}
+.cnt img{
+    width: 105%;
+}
+.cnt1{
+    width:55%;
+}
+
+.cnt2{
+    width:28%;
+}

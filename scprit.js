@@ -144,10 +144,17 @@ function anamitionHomepage(){
      
 
 }
-
+//locomotive smoth scrolling code
+function locominit(){
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('#home'),
+        smooth: true
+    });
+}
 revealToSpan();//class reval convert into span
 valueseter();//move nav tag upper,down..or visual apsent
 lodaerAnimation();//black screen animate or all..
+locominit();//smooth scrolling using locomotive
 
 
 
