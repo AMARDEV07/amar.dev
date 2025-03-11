@@ -1,6 +1,6 @@
 //span convert into reveal for text animationb(1)
 
-function revealToSpan(){
+function revealToSpanAnimationsetup(){
 
     document.querySelectorAll(".revel")
 
@@ -26,9 +26,8 @@ function revealToSpan(){
 
 }
 
-//value seter for svg..or animation(2)
-
-function valueseter(){
+//value seter for visaual svg..or animation(2)
+function valueseterForVIsualSvg(){
        //revel animation value jidden to start of homepage
         gsap.set("#nav a",{y:"-100%",opacity:0 });
         gsap.set("#home span .child ",{y:"100%"});
@@ -51,8 +50,7 @@ function valueseter(){
 
 
 // loder animation using gsap(3)
-
-function lodaerAnimation(){
+function StartinglodaerAnimation(){
     
 var tl=gsap.timeline();
 
@@ -100,7 +98,7 @@ tl
 
 //svg animation(4)
 
-function animateSVG() {
+function visuaanimateSVGcode() {
   
   
     // Animate paths or polyline inside <g> elements
@@ -138,23 +136,64 @@ function anamitionHomepage(){
         ease:Expo.easeInOut,
         delay:-.5,
         onComplete:function(){
-            animateSVG();
+            visuaanimateSVGcode();
         }
      })
      
 
 }
 //locomotive smoth scrolling code
-function locominit(){
+function locomotiveaddforsmoth(){
     const scroll = new LocomotiveScroll({
         el: document.querySelector('#home'),
         smooth: true
     });
 }
-revealToSpan();//class reval convert into span
-valueseter();//move nav tag upper,down..or visual apsent
-lodaerAnimation();//black screen animate or all..
-locominit();//smooth scrolling using locomotive
+
+//cards hover animationbgchanges
+function cardsHoveranimationBgchnage(){
+    //select cnt div and abd use foreach becouse we selected all cnt div
+    document.querySelectorAll(".cnt")
+
+    .forEach(function (cnt){
+        var showingImg;
+        // add event listner on age cnt div pa mousemove hoga toh
+
+        cnt.addEventListener("mousemove",function(dets){
+            //check kraga ki kon sa image pa hover kra ha or us img ka index daga ya 
+            console.log(dets.target.dataset.index)
+            //this select cursor div and check how many children div in cursor and kn sa div pa animation on kr do 
+            //target data set of animation
+           document.querySelector("#cursor").children[dets.target.dataset.index].style.opacity=1;
+           showingImg=dets.target;
+            // //jab na mouse move keta tha toh jo value mili ha x,y ki
+
+            document.querySelector("#cursor").children[dets.target.dataset.index].style.transform=`translate(${dets.clientX}px, ${dets.clientY}px)`;
+            //filter grascale effect on
+            showingImg.style.filter="grayscale(1)"
+            //bgc change according to img different img differnt color...
+            //work bg div
+            document.querySelector("#work").style.backgroundColor="#" + dets.target.dataset.color;
+
+        })
+
+        cnt.addEventListener("mouseleave",function(dets){
+            //hover img animation  off
+            document.querySelector("#cursor").children[showingImg.dataset.index].style.opacity=0;
+             //filter grascale effect off
+             showingImg.style.filter="grayscale(0)"
+             //mouse leave colour reset
+             document.querySelector("#work").style.backgroundColor="#f2f2f2";
+        })
+
+    })
+}
+
+revealToSpanAnimationsetup()//class reval convert into span jo setup krna tha wo letter animation nicha sa ara h
+valueseterForVIsualSvg();//move nav tag upper,down..or visual apsent
+StartinglodaerAnimation();//black screen animate or all..
+locomotiveaddforsmoth();//smooth scrolling using locomotive,or cards paralex efect
+cardsHoveranimationBgchnage()//cards hover bg changes on hover
 
 
 
