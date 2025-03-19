@@ -191,15 +191,30 @@ function cardsHoveranimationBgchnage() {
         })
 }
 
- 
+function time() {
+    const date = new Date();
+    const hours = date.getHours();
+    const mins = date.getMinutes();
+    const sec = date.getSeconds();
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    const formattedTime = `${hours}:${mins.toString()}:${sec.toString()} ${ampm}`;
+    document.querySelector(".time").textContent = formattedTime;
+    setTimeout(time, 1000);
+}
+
+
+
 
 
 
 
 revealToSpanAnimationsetup()//class reval convert into span jo setup krna tha wo letter animation nicha sa ara h
 valueseterForVIsualSvg();//move nav tag upper,down..or visual apsent
+
 StartinglodaerAnimation();//black screen animate or all..
+time();
 locomotiveaddforsmoth();//smooth scrolling using locomotive,or cards paralex efect
+
 cardsHoveranimationBgchnage()//cards hover bg changes on hover
 
 
