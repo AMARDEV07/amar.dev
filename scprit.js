@@ -150,7 +150,7 @@ function locomotiveaddforsmoth() {
     });
 }
 
-//cards hover animationbgchanges
+//cards hover animation sa jo bg chanes ho rakha h,images imination hora ha 
 function cardsHoveranimationBgchnage() {
     //select cnt div and abd use foreach becouse we selected all cnt div
     document.querySelectorAll(".cnt")
@@ -191,6 +191,8 @@ function cardsHoveranimationBgchnage() {
         })
 }
 
+
+//timeshow
 function time() {
     const date = new Date();
     const hours = date.getHours();
