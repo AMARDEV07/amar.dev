@@ -1,4 +1,9 @@
 
+
+window.onload=function(){
+    var shadowroot=document.querySelector('spline-viewer').shadowRoot;
+    shadowroot.querySelector('#logo').remove();
+}
 // gsap.registerPlugin(ScrollTrigger); // Ensure ScrollTrigger is registered
 
 var textWrapper = document.querySelector(".ml12");
@@ -121,7 +126,7 @@ function skillAnimation(){
             start: '20% 50%', // when the top of the trigger hits the top of the viewport
             end: '50% 50%', // end after scrolling 500px beyond the start
             scrub: true,
-            markers: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+            // markers: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
         }
       
     })
