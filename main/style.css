@@ -1,12 +1,20 @@
-/* @font-face {
+@font-face {
     font-family:gilroy ;
-    src: url(font/Gilroy-ExtraBold.ttf);
-} */
+    src: url(fonts/Gilroy-SemiBold.f3ed44cd.ttf);
+}
+@font-face {
+    font-family:gilroy-medium ;
+    src: url(fonts/Gilroy-Medium.e7e7c091.ttf);
+}
+@font-face {
+    font-family:gilroy-italic ;
+    src: url(fonts/Mazius-Extraitalic.121a71a7.otf);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family:gilroy ;
 }
 
 html,
@@ -26,7 +34,7 @@ body {
 
 /* loder */
 #fs {
-    /* display: none; */
+   
     position: fixed;
     width: 100%;
     height: 100%;
@@ -36,7 +44,7 @@ body {
 }
 
 #elem {
-    /* display: none; */
+
     width: 100%;
     height: 0px;
     position: absolute;
@@ -46,9 +54,9 @@ body {
 }
 
 .maz {
-    /* font-family: 'Courier New', Courier, monospace; */
-    /* font-style: italic; */
+    
     font-weight: 100;
+    font-family:gilroy-italic !important;
     color: #12cf93;
 }
 
@@ -78,18 +86,17 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: 500;
 }
 
 #fs h1 span {
-    /* font-family: mazius; */
-    font-family: mazius;
+    font-family:gilroy-medium ;
 }
 
 .revel .parent .child {
     display: block;
-    /* transform: translateY(-70%); */
+    
 }
 
 .parent .child span {
@@ -125,9 +132,10 @@ body {
 #nav a {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 300;
+    font-family:gilroy-medium ;
+    font-weight: 200;
     font-size: 12px;
-    color: black;
+    color: rgb(48, 45, 45);
     position: relative;
 }
 
@@ -166,6 +174,7 @@ body {
 
 /* //desiner part */
 .row {
+    
     margin-top: 2vw;
     display: flex;
     justify-content: space-between;
@@ -179,6 +188,7 @@ body {
 }
 
 .row h1 {
+    /* font-family:"gilory"; */
     font-size: 12vw;
     font-weight: 500;
 }
@@ -190,6 +200,9 @@ body {
 }
 
 .row h5 {
+    /* font-family:gilroy-medium; */
+  
+    color: #5a5555;
     opacity: 6;
     font-style: 11px;
     font-weight: 500;
@@ -235,18 +248,20 @@ polyline {
 }
 
 #img-left h1 {
+    font-family:gilroy-medium ;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1.8vw;
+    font-size: 2vw;
     letter-spacing: 1px;
-    color: black;
+    color: rgb(54, 52, 52);
 }
 
 #img-left h1 span {
     color: #12cf93;
-    font-style: italic;
-    font-family: "mazius Review 20.09";
-    font-weight: 100;
+    font-family:gilroy-italic ;
+    text-transform: capitalize;
+ 
+    font-weight: 200;
 }
 
 .img-right {
@@ -363,16 +378,21 @@ polyline {
 
 }
 
-.svgright span {
-    font-size: 13px;
-    font-style: italic;
+#p1 {
+    font-size: 16px;
+    font-family:gilroy-medium;
     color: grey;
     text-transform: uppercase;
 }
+#p1 span{
+    font-weight: 500;
+    font-family:gilroy-italic ;
+}
 
-.svgright p {
+#p2 {
     margin-top: 1rem;
     font-size: 1.3rem;
+    font-family:gilroy-medium ;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;

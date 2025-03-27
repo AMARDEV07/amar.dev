@@ -55,14 +55,14 @@ function StartinglodaerAnimation() {
     var tl = gsap.timeline();
 
     tl
-        .from("#fs .child span", {
+        .from("#fs .child span", { //nav ka animation text come from -y 
             x: 100,
             stagger: .2,
             duration: 1.4,
             ease: Power3.easeInOut
 
         })
-        .to("#fs .parent .child", {
+        .to("#fs .parent .child", {// //loder animation ma jo animation hora ha text ka span reavl class ki wajasa
             y: "-110%",
             duration: 1,
             ease: Circ.easeInOut
@@ -112,9 +112,9 @@ function visuaanimateSVGcode() {
 //   homepage animation(5)
 
 function anamitionHomepage() {
-    gsap.set("#nav a", { y: "-100%", opacity: 0 });
-    gsap.set("#home span .child ", { y: "100%" });
-    gsap.set("#home .row img ", { opacity: 0 });
+    gsap.set("#nav a", { y: "-100%", opacity: 0 });//nav tag animation up to down
+    gsap.set("#home span .child ", { y: "100%" });//row animation text up
+    gsap.set("#home .row img ", { opacity: 0 });// arrow img
 
 
     let tl = gsap.timeline();
@@ -125,12 +125,22 @@ function anamitionHomepage() {
             stagger: .05,
             ease: Expo.easeInOut
         })
-        .to("#home .parent .child", {
+        .to(".trival .parent .child",{ //trival ma mna creative or developer ko rakha ha taki dono ak sath phala animate ho
             y: 0,
             stagger: .01,
             duration: 1.5,
             ease: Expo.easeInOut
+
         })
+
+        .to(".text .parent .child", {//then text section aniamtion h stagger ka dwara
+            y: 0,
+            stagger: .05,
+            duration: 1.5,
+            ease: Expo.easeInOut
+        })
+
+     
         .to("#home .row img", {
             opacity: 1,
             ease: Expo.easeInOut,
@@ -139,6 +149,21 @@ function anamitionHomepage() {
                 visuaanimateSVGcode();
             }
         })
+        .from(".revel1", {
+            y: 100,
+            opacity: 1,
+            ease: "power2.out",
+            stagger: 0.2,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: ".revel1",
+                start: "top 60%",
+                end: "top 50%",
+                scrub: false,
+                toggleActions: "play none none reverse",
+            }
+        });
+
 
 
 }
@@ -197,9 +222,8 @@ function time() {
     const date = new Date();
     const hours = date.getHours();
     const mins = date.getMinutes();
-    const sec = date.getSeconds();
     const ampm = hours >= 12 ? 'PM' : 'AM';
-    const formattedTime = `${hours}:${mins.toString()}:${sec.toString()} ${ampm}`;
+    const formattedTime = `${hours}:${mins.toString()} ${ampm}`;
     document.querySelector(".time").textContent = formattedTime;
     setTimeout(time, 1000);
 }

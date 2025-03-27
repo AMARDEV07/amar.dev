@@ -61,7 +61,7 @@ function iamgesContainerAnimation(){
     
     // Images animation 4images
     gsap.from(".images > div", {
-        x: 200,
+        y: 200,
         opacity: 0,
         ease: "power2.out",
         stagger: 0.4,//delay betwen each element
