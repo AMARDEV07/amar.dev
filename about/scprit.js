@@ -4,7 +4,7 @@ window.onload=function(){
     var shadowroot=document.querySelector('spline-viewer').shadowRoot;
     shadowroot.querySelector('#logo').remove();
 }
-// gsap.registerPlugin(ScrollTrigger); // Ensure ScrollTrigger is registered
+
 
 var textWrapper = document.querySelector(".ml12");
 

@@ -125,7 +125,7 @@ function anamitionHomepage() {
             stagger: .05,
             ease: Expo.easeInOut
         })
-        .to(".trival .parent .child",{ //trival ma mna creative or developer ko rakha ha taki dono ak sath phala animate ho
+        .to(".trival .parent .child", { //trival ma mna creative or developer ko rakha ha taki dono ak sath phala animate ho
             y: 0,
             stagger: .01,
             duration: 1.5,
@@ -140,7 +140,7 @@ function anamitionHomepage() {
             ease: Expo.easeInOut
         })
 
-     
+
         .to("#home .row img", {
             opacity: 1,
             ease: Expo.easeInOut,
@@ -149,20 +149,7 @@ function anamitionHomepage() {
                 visuaanimateSVGcode();
             }
         })
-        .from(".revel1", {
-            y: 100,
-            opacity: 1,
-            ease: "power2.out",
-            stagger: 0.2,
-            duration: 1.5,
-            scrollTrigger: {
-                trigger: ".revel1",
-                start: "top 60%",
-                end: "top 50%",
-                scrub: false,
-                toggleActions: "play none none reverse",
-            }
-        });
+
 
 
 

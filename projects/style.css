@@ -289,46 +289,146 @@ body {
 
 
 
+
+
+
+
+/* fotter  ---------------------*/
 .footer {
-    margin-top: 20rem;
-    padding-top: 10rem;
-    width: 100%;
-    min-height:100vh;
-    background-color: #253b39;
-    position: relative;
-    text-align: center;
-   overflow: hidden;
-
-}
-
-
-.circle {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-}
-
-#c-circle {
-    width:100%; /* Prevents it from getting too large */
-    height:130vh; /* Maintain aspect ratio */
-    /* margin-bottom: 40rem; */
-
-}
-
-
-
-.footer span {
-    text-transform: uppercase;
-    color: #fff;
-    font-size: clamp(2rem, 5vw, 5rem); /* Responsive text */
-    font-weight: 500;
-    line-height:3.5rem;
-    letter-spacing: 1px;
-    text-align: center;
-}
+    height: 130vh;
+    
+        width: 100%;
+    
+        background-color: #253b39;
+    
+        text-align: center;
+        overflow: hidden;
+    
+    }
+    
+    
+    .circle {
+    
+        width: 100%;
+        position: relative;
+    }
+    
+    #c-circle {
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 29rem;
+    
+    }
+    
+    .text-c {
+        margin-top: 5rem;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+        text-align: center;
+    
+    }
+    
+    .text-c #talk {
+    
+        font-family: gilroy-medium;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: clamp(5rem, 5vw, 6rem);
+        line-height: 4.9rem;
+        letter-spacing: 1.1px;
+        text-align: center;
+    }
+    
+    .text-c-button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2.4rem;
+        margin-top: 7rem;
+    
+    
+    }
+    
+    #hire {
+        width: 31rem;
+        border: 1px solid white;
+        border-radius: 50px;
+        font-size: 1.4rem;
+        padding: 2rem;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+    
+    
+    }
+    
+    #hire:hover {
+        background: white;
+        color: #000;
+    
+    }
+    
+    .text-c-socialsite {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 2rem;
+    
+    }
+    
+    .socaldiv {
+        margin-top: 4rem;
+        text-align: start;
+        display: flex;
+        border-top: 1px solid white;
+        align-items: center;
+        color: white;
+        height: 5rem;
+        padding-top: 0.7rem;
+       
+        transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+        justify-content: center;
+        gap: 6rem;
+        
+    }
+    
+    .socaldiv h1 {
+        font-family: gilroy-medium;
+        font-size: 1.4rem;
+    
+    }
+    
+    .socaldiv p {
+        color: rgb(204, 188, 188);
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+    }
+    
+    .fa-brands {
+        background-color: white;
+        width: 2.4rem;
+        padding: 0.7rem;
+        text-align: center;
+    
+        height: 2.4rem;
+        border-radius: 50%;
+        color: rgb(177, 173, 173);
+    
+    
+    }
+    
+    .socaldiv:hover {
+        background-color: #12cf93;
+        border-top: 1px solid#12cf93;
+        padding: 1rem 0;
+    }
+    .allright{
+        width: 100%;
+        text-align: center;
+        margin-top: 4rem;
+    }

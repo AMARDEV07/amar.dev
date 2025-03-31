@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -24,14 +25,14 @@ body {
 .wrapper {
     width: 100%;
     height: 100%;
- 
-   
+
+
 
 }
 
 .main {
     padding-bottom: 15rem;
-   
+
     width: 100%;
 
 
@@ -50,6 +51,7 @@ header {
 
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 
     padding-bottom: 2rem;
 }
@@ -134,6 +136,38 @@ header {
 
 }
 
+.back-div {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.back-div p {
+    color: rgb(179, 165, 165);
+    text-align: center;
+    padding-top: 1rem;
+
+
+}
+
+
+#backbtn svg {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    padding: 0.7rem;
+    background-color: transparent;
+    font-size: 13px;
+    border: 1px solid rgb(187, 173, 173);
+    text-decoration: none;
+    background-color: rgb(150, 142, 142);
+
+}
+.back-div a{
+    text-decoration: none;
+}
+
 .bio {
 
     font-size: 1rem;
@@ -215,15 +249,10 @@ header {
 .button-hire {
     padding-left: 3rem;
     width: 100%;
-
-
-
-
-
 }
 
 
-#hire {
+#hire-btn {
 
     box-shadow: inset 0 0 0 0 #54b3d6;
     background-color: rgba(143, 143, 143, 0.2);
@@ -233,22 +262,25 @@ header {
     font-size: 18px;
     color: white;
     padding: 0.8rem 2rem;
+   
 
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-#hire:hover {
+#hire-btn:hover {
     color: #fff;
     box-shadow: inset 200px 0 0 0 #54b3d6;
 }
 
 /* Presentational styles */
-#hire {
+#hire-btn {
 
     font-family: 'Poppins', sans-serif;
 
     text-decoration: none;
 }
+
+
 
 
 
@@ -259,7 +291,7 @@ header {
     margin-top: 20rem;
     width: 100%;
 
-    
+
 }
 
 .column {
@@ -358,7 +390,7 @@ header {
 
 
 .one-blank {
-  
+
 
     /* background-color: red; */
     width: 100%;
@@ -393,7 +425,7 @@ header {
     width: 100%;
     font-weight: 400;
 
- color: white;
+    color: white;
 
 }
 
@@ -404,6 +436,8 @@ header {
     border-radius: 50px;
     font-weight: 100;
     filter: blur(5px);
+    background-color:rgb(165, 165, 165);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     opacity: 0;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
@@ -429,7 +463,7 @@ header {
 }
 
 #cnt {
-    color:white;
+    color: white;
     font-size: 3.9rem;
     margin-top: 2rem;
     text-transform: uppercase;
@@ -444,9 +478,9 @@ header {
     gap: 2rem;
     /* border: 2px solid rgb(83, 56, 56); */
     width: 100%;
-    
+
     padding: 10rem;
-   
+
 
 
 }
@@ -467,7 +501,7 @@ header {
 
 .form-right h3 {
     width: 100%;
-    background-color:wheat;
+    background-color: wheat;
     font-size: 1.9rem;
     text-transform: uppercase;
     margin-bottom: 6px;
@@ -481,14 +515,19 @@ header {
 }
 
 #form {
-    border-radius: 4px;
+    background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
 
     width: 100%;
     border: 2px solid gray;
     padding: 3rem;
 
 
- 
+
     text-align: center;
     display: flex;
     gap: 10px;
@@ -498,11 +537,11 @@ header {
 #name,
 #emil {
     width: 100%;
-    color: white;
+    color: #ffffff;
     border-radius: 10px;
     border: none;
     padding: 10px;
-    border: 1px solid gray;
+    border: 1px solid white;
     background: transparent;
 
 }
@@ -512,7 +551,7 @@ header {
     border-radius: 1px;
     border: none;
     color: white;
-    border: 1px solid gray;
+    border: 1px solid white;
     padding: 9px;
     margin-top: 2rem;
     height: 157px;
@@ -526,16 +565,17 @@ header {
     width: 8rem;
     padding: 0.5rem;
     color: white;
-    background: black;
+    background: rgb(61, 61, 61);
     border: none;
-    border-radius: 4px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .line {
-    
-  
+
+
     margin-top: 3.1rem;
-  width: 100%;
+    width: 100%;
     font-size: 3rem;
     text-align: start;
     line-height: 3.6rem;
@@ -550,7 +590,7 @@ header {
 .phone-details,
 .support-details {
     width: 100%;
-   
+
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
@@ -615,6 +655,148 @@ header {
 }
 
 
+/* fotter  ---------------------*/
+.footer {
+    height: 130vh;
+
+    width: 100%;
+
+    background-color: #253b39;
+
+    text-align: center;
+    overflow: hidden;
+
+}
+
+
+.circle {
+
+    width: 100%;
+    position: relative;
+}
+
+#c-circle {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 29rem;
+
+}
+
+.text-c {
+    margin-top: 5rem;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+
+}
+
+.text-c #talk {
+
+    font-family: gilroy-medium;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: clamp(5rem, 5vw, 6rem);
+    line-height: 4.9rem;
+    letter-spacing: 1.1px;
+    text-align: center;
+}
+
+.text-c-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-top: 7rem;
+
+
+}
+
+#hire {
+    width: 31rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+
+
+}
+
+#hire:hover {
+    background: white;
+    color: #000;
+
+}
+
+.text-c-socialsite {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2rem;
+
+}
+
+.socaldiv {
+    margin-top: 4rem;
+    text-align: start;
+    display: flex;
+    border-top: 1px solid white;
+    align-items: center;
+    color: white;
+    height: 5rem;
+    padding-top: 0.7rem;
+
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out;
+    justify-content: center;
+    gap: 6rem;
+
+}
+
+.socaldiv h1 {
+    font-family: gilroy-medium;
+    font-size: 1.4rem;
+
+}
+
+.socaldiv p {
+    color: rgb(204, 188, 188);
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}
+
+.fa-brands {
+    background-color: white;
+    width: 2.4rem;
+    padding: 0.7rem;
+    text-align: center;
+
+    height: 2.4rem;
+    border-radius: 50%;
+    color: rgb(177, 173, 173);
+
+
+}
+
+.socaldiv:hover {
+    background-color: #12cf93;
+    border-top: 1px solid#12cf93;
+    padding: 1rem 0;
+}
+
+.allright {
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
 
 
 
@@ -625,7 +807,7 @@ header {
     .main h1 {
         font-size: 7rem;
     }
-    
+
 }
 
 /* Tablets (Landscape & Portrait) */
@@ -653,7 +835,7 @@ header {
         margin-top: -1rem
     }
 
-    #hire {
+    #hire-btn {
         padding: 0.8rem 1.6rem;
         font-size: 18px;
     }
@@ -706,7 +888,7 @@ header {
         margin-top: -5rem;
     }
 
-    #hire {
+    #hire-btn {
         padding: 0.8rem 1.6rem;
         font-size: 18px;
 
@@ -760,7 +942,7 @@ header {
         margin-top: -5rem;
     }
 
-    #hire {
+    #hire-btn {
         padding: 0.6rem 1.2rem;
         font-size: 18px;
 
@@ -786,7 +968,7 @@ header {
         margin-top: -5rem;
     }
 
-    #hire {
+    #hire-btn {
         padding: 0.4rem 1rem;
         font-size: 16px;
 
@@ -795,19 +977,21 @@ header {
 
 /* //  2nd one  */
 
-@media(max-width:1200px){
-    .img{
+@media(max-width:1200px) {
+    .img {
         width: 100px;
         height: 180px;
     }
-    .headerr{
-    font-size: 30px;
+
+    .headerr {
+        font-size: 30px;
     }
-   
-   
-  
-   
+
+
+
+
 }
+
 @media (min-width: 900px) {
     .container {
         display: flex;
@@ -817,7 +1001,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 }
 
@@ -835,50 +1019,57 @@ header {
         font-size: 30px;
         padding: 80px 0;
     }
-    .ml12{
+
+    .ml12 {
         font-size: 3rem;
         margin-bottom: 2rem;
     }
 
     /* skill section  */
-   
-    .one-blank{
+
+    .one-blank {
         margin-top: 60rem;
         font-size: 2rem;
     }
-    .one-blank h1{
+
+    .one-blank h1 {
         font-size: 3rem;
     }
-    .skills{
-      
+
+    .skills {
+
         margin-top: 1rem;
         gap: 1vh;
     }
-    .skill-section h2{
+
+    .skill-section h2 {
         padding: 1vw 1.4vw;
         font-size: 3.5vw;
-        
+
 
     }
 
 }
-@media(max-width:480px){
-    .header-about p{
+
+@media(max-width:480px) {
+    .header-about p {
         font-size: 20px;
     }
-    .ml12{
+
+    .ml12 {
         margin-bottom: 2rem;
     }
-  
-    .skills{
-      
+
+    .skills {
+
         margin-top: 6rem;
         gap: 1vh;
     }
-    .skill-section h2{
-      
+
+    .skill-section h2 {
+
         font-size: 4.5vw;
-        
+
 
     }
 }
@@ -889,142 +1080,166 @@ header {
 /* //contact section  */
 
 
-@media(max-width:1300px){
-    .cnt{
+@media(max-width:1300px) {
+    .cnt {
         font-size: 1rem;
     }
-    .line{
+
+    .line {
         margin-top: 6rem;
         font-size: 2.6rem;
 
     }
-    .mail{
+
+    .mail {
         width: 12rem;
     }
-    .mail img{
+
+    .mail img {
         height: 25px;
         width: 25px;
         margin-top: 8px;
 
     }
-    .mail p{
+
+    .mail p {
         font-size: 11px;
         padding-top: 13px;
 
-        
+
     }
-    .support{
+
+    .support {
         width: 12rem;
     }
-    #sup1{
+
+    #sup1 {
         font-size: 14px;
     }
-    #supd{
+
+    #supd {
         font-size: 12px;
     }
 
 
 }
-@media(max-width:1100px){
-    .div-form{
+
+@media(max-width:1100px) {
+    .div-form {
         flex-direction: column;
         padding: 1rem;
     }
-  
- 
+
+
 }
 
-@media(max-width:860px){
-    #cnt{
+@media(max-width:860px) {
+    #cnt {
         font-size: 2.9rem;
     }
-    .div-form{
+
+    .div-form {
         width: 100%;
         padding: 3rem;
-     
+
     }
-   
-    .form-right{
+
+    .form-right {
         width: 60%;
     }
-  
-    .form-left{
+
+    .form-left {
         width: 100%;
-       
+
     }
-    .line{
+
+    .line {
         text-align: center;
     }
-   .phone-details{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-   }
-   .support-details{
-    justify-content: center;
-   }
+
+    .phone-details {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .support-details {
+        justify-content: center;
+    }
 
 
 
 }
-@media(max-width:680px){
-   .form-right{
-    width: 100%;
-   }
+
+@media(max-width:680px) {
+    .form-right {
+        width: 100%;
+    }
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
 
-    .line{
+    .line {
         font-size: 2.3rem;
     }
-    .phone-details{
+
+    .phone-details {
         flex-direction: column;
     }
-    .mai
-    .mail p{
+
+    .mai .mail p {
         font-size: 12px;
     }
-    .support-details{
+
+    .support-details {
         flex-direction: column;
         align-items: center;
-       
+
     }
-    #form{
+
+    #form {
         padding: 1rem;
     }
 }
-@media(max-width:462px){
-    .div-form{
-        padding:1.5rem;
+
+@media(max-width:462px) {
+    .div-form {
+        padding: 1.5rem;
     }
-    .line{
-        
-        font-size:2.4rem
+
+    .line {
+
+        font-size: 2.4rem
     }
-    .mail{
+
+    .mail {
         width: 19rem;
-     padding-left: 3rem;
+        padding-left: 3rem;
     }
-    .mail img{
+
+    .mail img {
         height: 25px;
         width: 25px;
         margin-top: 8px;
 
     }
-    .mail p{
+
+    .mail p {
         font-size: 13px;
         padding-top: 13px;
 
-        
+
     }
-    .support{
+
+    .support {
         width: 19rem;
     }
-    #sup1{
+
+    #sup1 {
         font-size: 17px;
     }
-    #supd{
+
+    #supd {
         font-size: 12px;
     }
 }
