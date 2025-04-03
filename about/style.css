@@ -137,6 +137,8 @@ header {
 }
 
 .back-div {
+    position: relative;
+    z-index: 999;
     width: 100%;
     display: flex;
     gap: 1rem;
@@ -144,7 +146,7 @@ header {
 }
 
 .back-div p {
-    color: rgb(179, 165, 165);
+    color:white;
     text-align: center;
     padding-top: 1rem;
 
@@ -161,7 +163,7 @@ header {
     font-size: 13px;
     border: 1px solid rgb(187, 173, 173);
     text-decoration: none;
-    background-color: rgb(150, 142, 142);
+    background-color:white;
 
 }
 .back-div a{

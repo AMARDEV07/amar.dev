@@ -83,6 +83,7 @@ body {
 
 #fs h1 {
     width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -225,15 +226,17 @@ body {
 
 
 }
-.c-visual{
+
+.c-visual {
     display: flex;
 }
-.c-visual-div{
+
+.c-visual-div {
     margin-top: 2.2rem;
     display: none;
     width: 7rem;
-    height:0.4rem;
-    background-color:#12cf93;
+    height: 0.4rem;
+    background-color: #12cf93;
 }
 
 path,
@@ -253,7 +256,7 @@ polyline {
 }
 
 #imaginary #img-left {
-    width: 30%;
+    width: 40%;
     height: auto;
 
 }
@@ -280,6 +283,7 @@ polyline {
     align-items: center;
     justify-content: center;
     position: relative;
+  
     height: auto;
     width: 60%;
     background-color: yellow;
@@ -339,7 +343,7 @@ polyline {
 }
 
 #work,
-.see-btn {
+.see-btn,.see-btn2 {
     transition: background-color cubic-bezier(0.19, 1, 0.22, 1)3s;
 
 }
@@ -475,7 +479,7 @@ polyline {
 }
 
 .cnt img {
-    width: 105%;
+    width: 100%;
     transition: filter cubic-bezier(0.19, 1, 0.22, 1) 2s;
 }
 
@@ -509,6 +513,10 @@ polyline {
     margin-top: -8rem;
     margin-left: 2rem;
     gap: 12px;
+   
+}
+.cnt-about a{
+    text-decoration: none;
 }
 
 .cnt-name {
@@ -532,15 +540,17 @@ polyline {
     align-items: center;
     border-radius: 50%;
     width: 4rem;
-    text-align: center
+    text-align: center;
+  
+    
 }
 
 .cnt-svg #arrow {
 
-    height: 2.5rem;
-    padding: 3px;
-    margin: 10px;
-
+   
+    height: 2.8rem;
+        margin-top: 9px;
+        rotate: -30deg;
 }
 
 
@@ -675,13 +685,21 @@ polyline {
 
     height: 5rem;
     text-align: center;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
 
 
 
 }
 
 .see-btn {
-    width: 90%;
+   width: 30rem;
+   
+   /* z-index: 999; */
+   
     height: 4.4rem;
     border-radius: 40px;
     background-color: #f2f2f2;
@@ -690,6 +708,20 @@ polyline {
     color: rgb(48, 46, 46);
 
 }
+.see-btn2 {
+    width: 30rem;
+    
+    /* z-index: 999; */
+    
+     height: 4.4rem;
+     border-radius: 40px;
+     background-color: #f2f2f2;
+     border: 2px solid lightgray;
+     font-size: 1.5rem;
+     color: rgb(48, 46, 46);
+ 
+ }
+
 
 
 /* skills div----------- */
@@ -783,6 +815,11 @@ polyline {
     text-align: center;
 
 }
+/* #talk-hidden{
+    display:none;
+    font-size: 4rem;
+
+} */
 
 .text-c #talk {
 
@@ -848,7 +885,7 @@ polyline {
 
     transition: 0.3s ease-in-out, color 0.3s ease-in-out;
     justify-content: center;
-    gap: 6rem;
+    gap: 7rem;
 
 }
 
@@ -887,7 +924,12 @@ polyline {
     width: 100%;
     text-align: center;
     margin-top: 4rem;
+    border-top: 1px solid gray;
 }
+.allright p{
+    color: gray;
+    margin-top: 1rem;
+    font-size: 1rem;}
 
 
 
@@ -908,27 +950,31 @@ polyline {
     }
 
     .row {
-    
-     flex-direction: column-reverse;
-    }
-    .row h1{
-        font-size:16vw;
-        text-align: start;
-    }
-    .row svg{
-      
-        height: 10vw;
-    }
-    .c-visual-div{
-        display:flex;
-        margin-left:10rem;
+
+        flex-direction: column-reverse;
     }
 
-    .row .c-visual{
-        order:1;
+    .row h1 {
+        font-size: 16vw;
+        text-align: start;
     }
-    .text{
-   margin-bottom: 1rem;
+
+    .row svg {
+
+        height: 10vw;
+    }
+
+    .c-visual-div {
+        display: flex;
+        margin-left: 10rem;
+    }
+
+    .row .c-visual {
+        order: 1;
+    }
+
+    .text {
+        margin-bottom: 1rem;
     }
 
 
@@ -951,44 +997,196 @@ polyline {
 
 
 @media(max-width:600px) {
-   .row svg{
-      
+    #fs h1{
+        /* font-size:3rem; */
+    }
+
+    .row svg {
+
         height: 8vw;
     }
-    .c-visual-div{
+
+    .c-visual-div {
         width: 5rem;
         margin-top: 1rem;
-        margin-left:10rem;
+        margin-left: 10rem;
     }
-    #imaginary{
+
+    #imaginary {
+       
         margin-top: 15rem;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
-    .img-left{
+
+    #img-left{
+       width: 100%;
+       margin-top: 20rem;
+       
+       
+    }
+    #img-left h1{
+       
+        font-size:0.8rem;
+    }
+
+    .img-right {
         width: 100%;
+        margin-top: 6rem;
+
     }
-    .img-right{
-        width: 100%;
-        
-    }
-    .img-right .imgcontnr{
+
+    .img-right .imgcontnr {
         width: 61vw;
         height: 90vw;
 
     }
+
     .img-right .imgcontnr:nth-child(1) {
         transform: translate(-12%, -8%) rotate(-6deg);
 
     }
+
     .img-right .imgcontnr:nth-child(2) {
         transform: translate(-10%, 6%) rotate(0deg);
 
     }
+
     .img-right .imgcontnr:nth-child(3) {
         transform: translate(20%, 20%) rotate(-5deg);
 
     }
+    .see-btn-div{
+        margin-top: 7rem;
+        flex-wrap: wrap;
+    }
+    .see-btn,.see-btn2{
+        width: 15rem;
+        font-size: 1.2rem;
+        height: 3.8rem;
+        margin-top: 1rem;
+      
+    }
    
+
+
+    #work {
+        margin-top: 10rem;
+    }
+
+    .svgright {
+        align-items: center;
+    }
+
+    .o-ui-arrow:nth-child(1) {
+        width: 40px;
+
+
+
+    }
+
+    .o-ui-arrow:nth-child(2) {
+        width: 40px;
+    }
+
+    #p1 {
+        font-size: 12px;
+    }
+
+    #p2 {
+        font-size: 1rem;
+    }
+
+    .workrow h1 {
+        font-size: 12.6vw;
+    }
+    #images{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+.images3{
+    flex-direction: column;
+}
+.cnt1,.cnt2,.cnt3,.cnt4,.cnt5 {
+    width: 90%;
+    margin-top: 5rem;
+}
+.cnt-about{
+  width: 20rem;
+}
+.cnt-name{
+ padding-top: 0.9rem;
+    font-size:1.6rem;
+}
+.cnt-svg{
+    width: 3rem;
+    height: 3rem;
+}
+
+.cnt-svg #arrow {
+
+    height: 1.9rem;
+    
+}
+#cursor{
+    
+    top: 300vw;
+}
+ #cursor div:nth-child(2) {
+    top: 330vw;
+  
+}
+/*
+#cursor div:nth-child(3) {
+    top: 700vw;
+  
+}
+
+#cursor div:nth-child(4) {
+    top: 240vw;
+
+} */
+
+#cursor div:nth-child(5) {
+    top: 230vw;
+   
+}
+.footer{
+    min-height: 140vh;
+}
+#c-circle{
+    width: 160%;
+    
+}
+.text-c #talk{
+    font-size: 4rem;
+    line-height: 4rem;
+}
+#hire{
+    width: 28rem;
+}
+.text-c-socialsite{
+    flex-direction: column;
+    margin-top: 9rem;
+}
+.socaldiv {
+    margin-top: 0;
+    height: 5rem;
+    width: 23rem;
+    gap: 10rem;
+}
+.allright{
+    
+    border-top: 1px solid gray;
+
+}
+.allright p{color: gray;
+margin-top: 1rem;
+font-size: 10px;}
+
+
 
 
 }

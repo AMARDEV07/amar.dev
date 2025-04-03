@@ -163,44 +163,50 @@ function locomotiveaddforsmoth() {
 }
 
 //cards hover animation sa jo bg chanes ho rakha h,images imination hora ha 
-function cardsHoveranimationBgchnage() {
-    //select cnt div and abd use foreach becouse we selected all cnt div
-    document.querySelectorAll(".cnt")
+function cardsHoverAnimationBgChange() {
+    document.querySelectorAll(".cnt").forEach(function (cnt) {
+        let showingImg;
 
-        .forEach(function (cnt) {
-            var showingImg;
-            // add event listner on age cnt div pa mousemove hoga toh
+        cnt.addEventListener("mousemove", function (event) {
+            let index = event.target.dataset.index;
+            let color = event.target.dataset.color;
+            let cursor = document.querySelector("#cursor");
 
-            cnt.addEventListener("mousemove", function (dets) {
-                //check kraga ki kon sa image pa hover kra ha or us img ka index daga ya 
-                console.log(dets.target.dataset.index)
-                //this select cursor div and check how many children div in cursor and kn sa div pa animation on kr do 
-                //target data set of animation
-                document.querySelector("#cursor").children[dets.target.dataset.index].style.opacity = 1;
-                showingImg = dets.target;
-                // //jab na mouse move keta tha toh jo value mili ha x,y ki
+            if (index !== undefined && cursor) {
+                index = parseInt(index); // Ensure it's a number
 
-                document.querySelector("#cursor").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
-                //filter grascale effect on
-                showingImg.style.filter = "grayscale(1)"
-                //bgc change according to img different img differnt color...
-                //work bg div,btn
-                document.querySelector("#work").style.backgroundColor = "#" + dets.target.dataset.color;
-                document.querySelector(".see-btn").style.backgroundColor = "#" + dets.target.dataset.color;
+                if (cursor.children[index]) {
+                    cursor.children[index].style.opacity = 1;
+                    cursor.children[index].style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+                }
 
-            })
+                showingImg = event.target;
+                showingImg.style.filter = "grayscale(1)";
 
-            cnt.addEventListener("mouseleave", function (dets) {
-                //hover img animation  off
-                document.querySelector("#cursor").children[showingImg.dataset.index].style.opacity = 0;
-                //filter grascale effect off
-                showingImg.style.filter = "grayscale(0)"
-                //mouse leave colour reset
+                document.querySelector("#work").style.backgroundColor = `#${color}`;
+                document.querySelector(".see-btn").style.backgroundColor = `#${color}`;
+                document.querySelector(".see-btn2").style.backgroundColor = `#${color}`;
+            }
+        });
+
+        cnt.addEventListener("mouseleave", function () {
+            let cursor = document.querySelector("#cursor");
+
+            if (showingImg && showingImg.dataset.index !== undefined && cursor) {
+                let index = parseInt(showingImg.dataset.index);
+
+                if (cursor.children[index]) {
+                    cursor.children[index].style.opacity = 0;
+                }
+
+                showingImg.style.filter = "grayscale(0)";
+
                 document.querySelector("#work").style.backgroundColor = "#f2f2f2";
                 document.querySelector(".see-btn").style.backgroundColor = "#f2f2f2";
-            })
-
-        })
+                document.querySelector(".see-btn2").style.backgroundColor = "#f2f2f2";
+            }
+        });
+    });
 }
 
 
@@ -228,7 +234,7 @@ StartinglodaerAnimation();//black screen animate or all..
 time();
 locomotiveaddforsmoth();//smooth scrolling using locomotive,or cards paralex efect
 
-cardsHoveranimationBgchnage()//cards hover bg changes on hover
+cardsHoverAnimationBgChange()//cards hover bg changes on hover
 
 
 
