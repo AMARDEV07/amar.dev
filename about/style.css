@@ -308,7 +308,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url("images/07.jpeg") no-repeat 50% 50%;
+    background: url("images/josh-hild-TBd0-kgIaC8-unsplash.jpg") no-repeat 50% 50%;
     background-size: cover;
     padding: 20px;
 }
@@ -330,34 +330,34 @@ header {
 }
 
 .img-1 {
-    background: url("images/001.jpg") no-repeat 50% 50%;
+    background: url("images/WhatsApp\ Image\ 2025-04-04\ at\ 04.58.12_fa69c2c8.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 .img-2 {
-    background: url("images/006.jpg") no-repeat 50% 50%;
+    background: url("images/pixelperfektion-0TkxgV7LvnI-unsplash.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 .img-3 {
-    background: url("images/002.jpg") no-repeat 50% 50%;
+    background: url("images/WhatsApp\ Image\ 2025-04-04\ at\ 04.54.15_15d8ffcd.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 .img-4 {
-    background: url("images/005.jpg") no-repeat 50% 50%;
+    background: url("images/tobias-rademacher-TwpK_5JugM0-unsplash.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 
 .header-about {
-    color: #a77a3f;
+    color:rgb(212, 195, 146);
     text-transform: uppercase;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
 }
 
 .headerr {
-    color: #a77a3f;
+    color:rgb(212, 195, 146);
     text-transform: uppercase;
     font-size: 40px;
 }
