@@ -9,25 +9,3 @@ This is my personal portfolio website built using **HTML5, CSS3, JavaScript**, a
 - **Clean UI/UX** – focused on performance and design aesthetics
 
 
-
-
-🔄 Loading Animation Steps  (part1)
-
-1️⃣ *Create a new project* in your preferred animation software or use a pre-made template.  
-
-2️⃣ *Structure your HTML:*  
-   - Create *3 divs* for the animation:  
-     - 🖤 *Black Div:* Acts as the background. Set width: 100% and height: 100%.  
-     - 💚 *Green Div:* Positioned at the bottom, covering part of the Black Div.  
-     - ⚪ *White Div:* Similar to the Green Div, also positioned at the bottom.  
-
-3️⃣ *Why position Green & White at the bottom?*  
-   - When using *GSAP animation* with easeInOut, elements move *from bottom to top*.  
-   - If the divs were *not* at the bottom initially, they would animate *downwards* instead of *upwards*—which isn't what we want! ✅  
-
-Now, apply GSAP for smooth animation, and your stylish loading effect is ready! 🚀🔥
-
-
-
-
- 🔄 Text Animation Steps  (part2)
