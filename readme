@@ -1,11 +1,83 @@
+# 🌐 Personal Portfolio Website
 
-### 📌 Portfolio Overview
+A modern and fully responsive **portfolio website** showcasing my skills, projects, and design aesthetics. Built using **HTML5**, **CSS3**, and **JavaScript**, with advanced effects powered by **Locomotive Scroll** and **Spline 3D**.
 
-This is my personal portfolio website built using **HTML5, CSS3, JavaScript**, and enhanced with:
+---
 
-- **Locomotive Scroll** – for smooth scrolling and subtle animations  
-- **Spline 3D** – for embedding interactive 3D models  
-- **Responsive Design** – optimized for mobile and desktop  
-- **Clean UI/UX** – focused on performance and design aesthetics
+## 📌 Overview
+
+This is my personal portfolio site designed to:
+
+- Introduce who I am
+- Highlight my featured projects
+- Provide ways to contact me
+- Deliver a visually engaging and interactive user experience
+
+---
+
+## ✨ Features
+
+- ⚡ Smooth scrolling using **Locomotive Scroll**
+- 🎮 Interactive 3D objects using **Spline 3D**
+- 💻 Fully **responsive design** – adapts to all screen sizes
+- 💡 Clean UI/UX focused on performance and minimalism
+- 🧠 Well-structured sections:
+  - **About**
+  - **Projects**
+  - **Skills**
+  - **Contact**
+- 🎨 Custom fonts and icons for a unique look
+
+---
+
+## 📁 Project Structure
 
 
+├── index.html # Main HTML file
+├── style.css # All styling and layout rules
+├── script.js # Scroll, animation and interactivity logic
+├── images/ # All image assets used in the site
+├── fonts/ # Custom font files
+├── cards/ # Responsive component assets
+├── projects/ # Project previews and details
+├── readme/ # Previous version(s) of readme if any
+
+📌 Technologies Used
+HTML5
+
+CSS3 with media queries
+
+Vanilla JavaScript
+
+Locomotive Scroll – GitHub
+
+Spline 3D – https://spline.design
+
+📱 Responsive Design
+The website adapts to:
+
+📱 Mobile Devices
+
+💻 Tablets
+
+🖥️ Desktop Screens
+
+Every component is optimized using flexible grid systems, media queries, and modern CSS practices.
+
+🧠 Learnings & Goals
+Building custom animations
+
+Implementing smooth scroll + 3D graphics
+
+Practicing modular design and scalability
+
+Preparing for real-world personal branding
+
+📬 Contact
+Feel free to reach out for collaboration or feedback:
+
+📧 your-email@example.com
+
+🌐 yourwebsite.com
+
+🐙 GitHub
