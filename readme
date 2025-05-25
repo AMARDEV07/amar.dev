@@ -31,4 +31,59 @@ This is my personal portfolio site designed to:
 ---
 
 ## 📁 Project Structure
+├── index.html # Main HTML file
+├── style.css # All styling and layout rules
+├── script.js # Scroll, animation and interactivity logic
+├── images/ # All image assets used in the site
+├── about/ # Details about me, contact form, skill details
+├── fonts/ # Custom font files
+├── cards/ # Responsive component assets
+├── projects/ # Project previews and details
+├── readme/ # Previous version(s) of README if any
+
+
+---
+
+## 📌 Technologies Used
+
+- **HTML5**
+- **CSS3** with media queries
+- **Vanilla JavaScript**
+- **Locomotive Scroll** – [GitHub](https://github.com/locomotivemtl/locomotive-scroll)
+- **Spline 3D** – [https://spline.design](https://spline.design)
+
+---
+
+## 📱 Responsive Design
+
+The website adapts to:
+
+- 📱 Mobile Devices  
+- 💻 Tablets  
+- 🖥️ Desktop Screens  
+
+All components are optimized using modern CSS practices, flexible grid systems, and media queries.
+
+---
+
+## 🧠 Learnings & Goals
+
+- Building custom animations  
+- Implementing smooth scroll and 3D graphics  
+- Practicing modular and responsive design  
+- Preparing for real-world personal branding  
+
+---
+
+## 📬 Contact
+
+Feel free to reach out for collaboration or feedback:
+
+- 📧 Email: **panwaraman2005@gmail.com**  
+- 🐙 GitHub: https://github.com/AMARDEV07
+
+---
+
+Made with ❤️ by **Amardev Panwar**
+
 
