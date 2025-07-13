@@ -998,6 +998,14 @@ polyline {
 
 
 @media(max-width:600px) {
+     #elem {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        z-index: 99999 !important;
+    }
+
     #fs h1{
         /* font-size:3rem; */
     }
