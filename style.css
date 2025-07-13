@@ -782,6 +782,7 @@ polyline {
 
 /* fotter  ---------------------*/
 .footer {
+     margin-top: 3rem;
     height: 130vh;
 
     width: 100%;
